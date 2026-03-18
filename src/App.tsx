@@ -54,14 +54,16 @@ const Hero = () => (
           Você não precisa mais inventar nada: escolha uma atividade e veja seu filho se envolver na hora
         </p>
 
-        <div className="aspect-video max-w-4xl mx-auto mb-10 overflow-hidden">
-          <iframe
-            src="https://player.vimeo.com/video/1174834434?badge=0&autopause=0&player_id=0&app_id=58479"
-            frameBorder="0"
-            allow="autoplay; fullscreen; picture-in-picture; clipboard-write"
-            className="w-full h-full"
-            title="Video"
-          ></iframe>
+        <div className="w-full max-w-[517px] mx-auto mb-8 md:mb-12">
+          <div className="relative aspect-[517/920] w-full overflow-hidden rounded-[2.5rem] shadow-2xl border-4 border-white/10 bg-black">
+            <iframe
+              src="https://player.vimeo.com/video/1174834434?badge=0&autopause=0&player_id=0&app_id=58479"
+              frameBorder="0"
+              allow="autoplay; fullscreen; picture-in-picture; clipboard-write"
+              className="absolute inset-0 w-full h-full"
+              title="Video"
+            ></iframe>
+          </div>
         </div>
       </motion.div>
 
@@ -171,9 +173,9 @@ const Comparison = () => (
 );
 
 const Bonus = () => (
-  <section className="py-20 bg-[#fffdfa]">
+  <section className="py-20 bg-orange-50/50">
     <div className="container mx-auto px-4">
-      <h2 className="text-3xl md:text-5xl font-bold text-center mb-16">Garantindo seu acesso hoje você leva<br/><span className="text-primary">8 SUPER BÔNUS</span></h2>
+      <h2 className="text-3xl md:text-5xl font-bold text-center mb-16">Garantindo seu acesso hoje você leva<br/><span className="text-orange-600">8 SUPER BÔNUS</span></h2>
       
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
         {[
@@ -186,7 +188,7 @@ const Bonus = () => (
           { id: "07", title: "Desafio 14 Dias Sem Tela", value: "29", img: "https://i.imgur.com/crMY7wM.png" },
           { id: "08", title: "Como Fazer Seu Filho Pedir para Brincar", value: "33", img: "https://i.imgur.com/ADZYPb4.png" }
         ].map((b, i) => (
-          <div key={i} className="bg-white p-5 rounded-2xl shadow-sm border border-accent/20 flex flex-col group hover:shadow-md transition-all duration-300">
+          <div key={i} className="bg-white p-5 rounded-2xl shadow-sm border border-orange-200 flex flex-col group hover:shadow-xl hover:shadow-orange-200/20 transition-all duration-300">
             <div className="overflow-hidden rounded-xl mb-6">
               <img 
                 src={b.img} 
@@ -200,7 +202,7 @@ const Bonus = () => (
               <p className="text-gray-500 text-sm mb-4">
                 Valor separado: <span className="line-through">R${b.value}</span>
               </p>
-              <div className="w-full bg-[#c5a048] text-white font-black py-3 rounded-xl text-center uppercase tracking-tighter text-lg shadow-[0_4px_0_0_#8e702d] active:translate-y-1 active:shadow-none transition-all">
+              <div className="w-full bg-orange-500 text-white font-black py-3 rounded-xl text-center uppercase tracking-tighter text-lg shadow-[0_4px_0_0_#c2410c] active:translate-y-1 active:shadow-none transition-all">
                 HOJE GRÁTIS
               </div>
             </div>
@@ -285,7 +287,7 @@ const Offers = ({ onOpenUpsell }: { onOpenUpsell: () => void }) => (
                   "Desafio 14 Dias Sem Tela",
                   "Como Fazer Seu Filho Pedir para Brincar"
                 ].map((bonus, idx) => (
-                  <div key={idx} className="flex items-center gap-2 bg-[#f0f9f4] p-2 rounded-lg border border-dashed border-[#dcfce7] text-[11px] font-bold text-[#16a34a]">
+                  <div key={idx} className="flex items-center gap-2 bg-orange-50 p-2 rounded-lg border border-dashed border-orange-200 text-[11px] font-bold text-orange-700">
                     <Gift className="w-3 h-3" />
                     {bonus}
                   </div>
