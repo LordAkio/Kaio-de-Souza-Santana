@@ -229,7 +229,7 @@ const Offers = ({ onOpenUpsell }: { onOpenUpsell: () => void }) => (
               <div className="text-5xl font-bold text-gray-800">R$ 10</div>
             </div>
             <ul className="text-left space-y-4 mb-10">
-              <li className="flex gap-3 text-sm"><CheckCircle2 className="w-5 h-5 text-success flex-shrink-0" /> 1 tema de atividades (22 atividades)</li>
+              <li className="flex gap-3 text-sm"><CheckCircle2 className="w-5 h-5 text-success flex-shrink-0" /> +150 atividades que fazem a criança esquecer o celular</li>
               <li className="flex gap-3 text-sm"><CheckCircle2 className="w-5 h-5 text-success flex-shrink-0" /> Receba pelo E-mail + download</li>
               <li className="flex gap-3 text-sm opacity-30"><X className="w-5 h-5 text-gray-400 flex-shrink-0" /> 8 Bônus Exclusivos</li>
               <li className="flex gap-3 text-sm opacity-30"><X className="w-5 h-5 text-gray-400 flex-shrink-0" /> Atualizações Grátis</li>
@@ -331,7 +331,7 @@ const FAQ = () => {
     { q: "Precisa de material diferente ou caro?", a: "Não. As atividades foram pensadas com itens simples de casa. No plano completo você ainda recebe o Pacote \"Só Coisa de Casa\"." },
     { q: "Serve mesmo para 4 a 12 anos?", a: "Sim — porque cada atividade traz linguagem simples, e você consegue adaptar a \"fala\" e a explicação conforme a idade." },
     { q: "É seguro para crianças?", a: "Sim, com supervisão adulta. Sempre que existir algum cuidado extra, a atividade vem sinalizada com ⚠️ e instruções claras." },
-    { q: "Qual a diferença do plano de R$10 pro de R$27,90?", a: "R$10: 1 tema de atividades (22 atividades). R$27,90: Kit Completo UAU (110 atividades) + 8 bônus exclusivos (Manhã, Tarde e Noite, Histórias, Colorir, Lúdicas, Guia Sem Briga, etc.)" }
+    { q: "Qual a diferença do plano de R$10 pro de R$27,90?", a: "R$10: +150 atividades que fazem a criança esquecer o celular. R$27,90: Kit Completo UAU (+150 atividades) + 8 bônus exclusivos (Manhã, Tarde e Noite, Histórias, Colorir, Lúdicas, Guia Sem Briga, etc.)" }
   ];
 
   return (
