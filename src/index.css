@@ -1,0 +1,49 @@
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Fredoka", "Quicksand", ui-sans-serif, system-ui, sans-serif;
+  --color-primary: #ff6b6b;
+  --color-secondary: #4ecdc4;
+  --color-accent: #ffe66d;
+  --color-magic: #a29bfe;
+  --color-success: #55efc4;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Fredoka:wght@400;500;600;700&family=Quicksand:wght@400;500;600;700&display=swap');
+
+body {
+  @apply bg-[#fffdfa] text-[#2d3436] antialiased;
+}
+
+.highlight {
+  @apply text-primary font-bold;
+}
+
+.section-divider {
+  @apply w-full overflow-hidden leading-[0] rotate-180;
+}
+
+.section-divider svg {
+  @apply relative block w-[calc(100%+1.3px)] h-[60px];
+}
+
+.pulse {
+  animation: pulse-animation 2s infinite;
+}
+
+@keyframes pulse-animation {
+  0% { transform: scale(1); }
+  50% { transform: scale(1.05); }
+  100% { transform: scale(1); }
+}
+
+.showcase-track {
+  display: flex;
+  width: calc(300px * 14);
+  animation: scroll 30s linear infinite;
+}
+
+@keyframes scroll {
+  0% { transform: translateX(0); }
+  100% { transform: translateX(calc(-300px * 7)); }
+}
