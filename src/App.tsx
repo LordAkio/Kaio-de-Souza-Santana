@@ -136,7 +136,7 @@ const Comparison = () => (
   <section className="py-20 bg-white">
     <div className="container mx-auto px-4">
       <h2 className="text-3xl font-bold text-center mb-4">Como fica a vida com o DESLIGA TELA na mão</h2>
-      <p className="text-center text-gray-600 mb-12 max-w-2xl mx-auto">Não é sobre “demonizar tela”. É sobre você ter uma alternativa simples, pronta e gostosa o suficiente pra virar o novo “bora fazer?” da família.</p>
+      <p className="text-center text-gray-600 mb-12 max-w-2xl mx-auto">Não é sobre “demonizar tela”. É sobre você ter uma alternativa simples, pronta e gostosa o suficiente para virar o novo “bora fazer?” da família.</p>
       
       <div className="max-w-4xl mx-auto overflow-hidden rounded-2xl border border-gray-200 shadow-xl">
         <table className="w-full text-left border-collapse">
@@ -177,14 +177,14 @@ const Bonus = () => (
       
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
         {[
-          { id: "01", title: "Manhã Tarde e Noite para Crianças", value: "27", img: "https://i.imgur.com/r2MGHED.png" },
+          { id: "01", title: "Manhã, Tarde e Noite para Crianças", value: "27", img: "https://i.imgur.com/r2MGHED.png" },
           { id: "02", title: "História para dormir", value: "17", img: "https://i.imgur.com/BWi23Fq.png" },
           { id: "03", title: "15 Atividades para colorir", value: "15", img: "https://i.imgur.com/okCWlZl.png" },
           { id: "04", title: "20 Atividades lúdicas", value: "22", img: "https://i.imgur.com/FxbRm9M.png" },
           { id: "05", title: "Como Tirar Seu Filho do Celular Sem Briga", value: "37", img: "https://i.imgur.com/utMKtqG.png" },
           { id: "06", title: "Painel de Progresso Infantil", value: "19", img: "https://i.imgur.com/95D3cAj.png" },
           { id: "07", title: "Desafio 14 Dias Sem Tela", value: "29", img: "https://i.imgur.com/crMY7wM.png" },
-          { id: "08", title: "Como Fazer Seu Filho Pedir pra Brincar", value: "33", img: "https://i.imgur.com/ADZYPb4.png" }
+          { id: "08", title: "Como Fazer Seu Filho Pedir para Brincar", value: "33", img: "https://i.imgur.com/ADZYPb4.png" }
         ].map((b, i) => (
           <div key={i} className="bg-white p-5 rounded-2xl shadow-sm border border-accent/20 flex flex-col group hover:shadow-md transition-all duration-300">
             <div className="overflow-hidden rounded-xl mb-6">
@@ -227,7 +227,7 @@ const Offers = ({ onOpenUpsell }: { onOpenUpsell: () => void }) => (
               <div className="text-5xl font-bold text-gray-800">R$ 10</div>
             </div>
             <ul className="text-left space-y-4 mb-10">
-              <li className="flex gap-3 text-sm"><CheckCircle2 className="w-5 h-5 text-success flex-shrink-0" /> 1 baralho temático (22 cartas)</li>
+              <li className="flex gap-3 text-sm"><CheckCircle2 className="w-5 h-5 text-success flex-shrink-0" /> 1 tema de atividades (22 atividades)</li>
               <li className="flex gap-3 text-sm"><CheckCircle2 className="w-5 h-5 text-success flex-shrink-0" /> Receba pelo E-mail + download</li>
               <li className="flex gap-3 text-sm opacity-30"><X className="w-5 h-5 text-gray-400 flex-shrink-0" /> 8 Bônus Exclusivos</li>
               <li className="flex gap-3 text-sm opacity-30"><X className="w-5 h-5 text-gray-400 flex-shrink-0" /> Atualizações Grátis</li>
@@ -276,14 +276,14 @@ const Offers = ({ onOpenUpsell }: { onOpenUpsell: () => void }) => (
               
               <div className="mt-4 space-y-1 pl-4">
                 {[
-                  "Manha Tarde e Noite para Criancas",
-                  "Hitória para dormir",
+                  "Manhã, Tarde e Noite para Crianças",
+                  "História para dormir",
                   "15 Atividades para colorir",
-                  "20 Atividades ludicas",
-                  "Como-Tirar Seu Filho do Celular Sem Briga",
+                  "20 Atividades lúdicas",
+                  "Como Tirar Seu Filho do Celular Sem Briga",
                   "Painel de Progresso Infantil",
                   "Desafio 14 Dias Sem Tela",
-                  "Como Fazer Seu Filho Pedir pra Brincar"
+                  "Como Fazer Seu Filho Pedir para Brincar"
                 ].map((bonus, idx) => (
                   <div key={idx} className="flex items-center gap-2 bg-[#f0f9f4] p-2 rounded-lg border border-dashed border-[#dcfce7] text-[11px] font-bold text-[#16a34a]">
                     <Gift className="w-3 h-3" />
@@ -327,9 +327,9 @@ const FAQ = () => {
     { q: "Eu preciso esperar envio? Chega pelos Correios?", a: "Não. É 100% digital. Você acessa e baixa na hora." },
     { q: "Preciso ter impressora em casa?", a: "Não necessariamente. Você pode imprimir em uma gráfica rápida/papelaria, ou quando quiser (por exemplo, no trabalho/casa de um parente)." },
     { q: "Precisa de material diferente ou caro?", a: "Não. As atividades foram pensadas com itens simples de casa. No plano completo você ainda recebe o Pacote \"Só Coisa de Casa\"." },
-    { q: "Serve mesmo para 4 a 12 anos?", a: "Sim — porque cada carta traz linguagem simples, e você consegue adaptar a \"fala\" e a explicação conforme a idade." },
-    { q: "É seguro para crianças?", a: "Sim, com supervisão adulta. Sempre que existir algum cuidado extra, a carta vem sinalizada com ⚠️ e instruções claras." },
-    { q: "Qual a diferença do plano de R$10 pro de R$27,90?", a: "R$10: 1 baralho (22 cartas). R$27,90: Kit Completo UAU (110 cartas) + 8 bônus exclusivos (Manhã/Tarde/Noite, Histórias, Colorir, Lúdicas, Guia Sem Briga, etc.)" }
+    { q: "Serve mesmo para 4 a 12 anos?", a: "Sim — porque cada atividade traz linguagem simples, e você consegue adaptar a \"fala\" e a explicação conforme a idade." },
+    { q: "É seguro para crianças?", a: "Sim, com supervisão adulta. Sempre que existir algum cuidado extra, a atividade vem sinalizada com ⚠️ e instruções claras." },
+    { q: "Qual a diferença do plano de R$10 pro de R$27,90?", a: "R$10: 1 tema de atividades (22 atividades). R$27,90: Kit Completo UAU (110 atividades) + 8 bônus exclusivos (Manhã, Tarde e Noite, Histórias, Colorir, Lúdicas, Guia Sem Briga, etc.)" }
   ];
 
   return (
@@ -467,14 +467,14 @@ const UpsellModal = ({ isOpen, onClose }: { isOpen: boolean, onClose: () => void
 
             <ul className="text-left space-y-1 mb-8 text-[11px]">
               <li className="flex items-center gap-2 font-bold text-sm mb-1"><CheckCircle2 className="w-3.5 h-3.5 text-success" /> +150 Atividades (Kit Completo)</li>
-              <li className="flex items-center gap-2"><CheckCircle2 className="w-3 h-3 text-success" /> Manha Tarde e Noite para Criancas</li>
-              <li className="flex items-center gap-2"><CheckCircle2 className="w-3 h-3 text-success" /> Hitória para dormir</li>
+              <li className="flex items-center gap-2"><CheckCircle2 className="w-3 h-3 text-success" /> Manhã, Tarde e Noite para Crianças</li>
+              <li className="flex items-center gap-2"><CheckCircle2 className="w-3 h-3 text-success" /> História para dormir</li>
               <li className="flex items-center gap-2"><CheckCircle2 className="w-3 h-3 text-success" /> 15 Atividades para colorir</li>
-              <li className="flex items-center gap-2"><CheckCircle2 className="w-3 h-3 text-success" /> 20 Atividades ludicas</li>
-              <li className="flex items-center gap-2"><CheckCircle2 className="w-3 h-3 text-success" /> Como-Tirar Seu Filho do Celular Sem Briga</li>
+              <li className="flex items-center gap-2"><CheckCircle2 className="w-3 h-3 text-success" /> 20 Atividades lúdicas</li>
+              <li className="flex items-center gap-2"><CheckCircle2 className="w-3 h-3 text-success" /> Como Tirar Seu Filho do Celular Sem Briga</li>
               <li className="flex items-center gap-2"><CheckCircle2 className="w-3 h-3 text-success" /> Painel de Progresso Infantil</li>
               <li className="flex items-center gap-2"><CheckCircle2 className="w-3 h-3 text-success" /> Desafio 14 Dias Sem Tela</li>
-              <li className="flex items-center gap-2"><CheckCircle2 className="w-3 h-3 text-success" /> Como Fazer Seu Filho Pedir pra Brincar</li>
+              <li className="flex items-center gap-2"><CheckCircle2 className="w-3 h-3 text-success" /> Como Fazer Seu Filho Pedir para Brincar</li>
             </ul>
 
             <div className="space-y-3">
